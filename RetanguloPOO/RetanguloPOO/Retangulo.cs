@@ -19,6 +19,7 @@ namespace RetanguloPOO
         }
         public double Diagonal()
         {
+
             double lado1 = Math.Pow(Largura, 2);
             double lado2 = Math.Pow(Altura, 2);
             double total = lado1 + lado2;
