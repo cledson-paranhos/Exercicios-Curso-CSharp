@@ -22,3 +22,10 @@ RetanguloPOO/RetanguloPOO/obj/Debug/netcoreapp2.1/TemporaryGeneratedFile_036C0B5
 RetanguloPOO/RetanguloPOO/obj/Debug/netcoreapp2.1/RetanguloPOO.assets.cache
 RetanguloPOO/RetanguloPOO/obj/RetanguloPOO.csproj.nuget.g.targets
 RetanguloPOO/.vs/RetanguloPOO/v15/Server/sqlite3/db.lock
+*.cache
+Lógica/Uri1134/Uri1134/obj/Debug/netcoreapp2.1/TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs
+Lógica/Uri1134/.vs/Uri1134/DesignTimeBuild/.dtbcache
+*.targets
+Lógica/Uri1134/.vs/Uri1134/v15/Server/sqlite3/db.lock
+Lógica/Uri1134/.vs/Uri1134/v15/Server/sqlite3/storage.ide-shm
+*.sln
