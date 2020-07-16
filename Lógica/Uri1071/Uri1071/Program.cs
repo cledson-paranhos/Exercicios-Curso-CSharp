@@ -9,7 +9,6 @@ namespace Uri1071
             int min, max, soma = 0;
             int x = int.Parse(Console.ReadLine());
             int y = int.Parse(Console.ReadLine());
-
             if(x < y)
             {
                 min = x;
@@ -20,6 +19,7 @@ namespace Uri1071
                 min = y;
                 max = x;
             }
+
             for(int i = min + 1; i < max; i++)
             {
                 if(i % 2 != 0)
@@ -29,6 +29,7 @@ namespace Uri1071
             }
             Console.WriteLine(soma);
             Console.ReadKey();
+
         }
     }
 }
