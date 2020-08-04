@@ -11,8 +11,8 @@ namespace uri1066
             int num3 = int.Parse(Console.ReadLine());
             int num4 = int.Parse(Console.ReadLine());
             int num5 = int.Parse(Console.ReadLine());
-            int positivo = 0, negativo = 0, par = 0, impar = 0; 
-            if(num1 % 2 == 0)
+            int positivo = 0, negativo = 0, par = 0, impar = 0;
+            if (num1 % 2 == 0)
             {
                 par = par += 1;
             }
@@ -56,8 +56,8 @@ namespace uri1066
             {
                 impar = impar += 1;
             }
-            
-            if(num1 > 0)
+
+            if (num1 > 0)
             {
                 positivo = positivo += 1;
             }
@@ -65,33 +65,20 @@ namespace uri1066
             {
                 negativo = negativo += 1;
             }
-            if(num2 > 0)
+            if (num2 > 0)
             {
                 positivo = positivo += 1;
             }
             else
             {
-                
+
                 negativo = negativo += 1;
-                if(num2 == 0)
+                if (num2 == 0)
                 {
                     negativo = negativo -= 1;
                 }
-            }if(num3 > 0)
-            {
-                positivo = positivo += 1;
             }
-            else
-            {
-                negativo = negativo += 1;
-            }if(num4 > 0)
-            {
-                positivo = positivo += 1;
-            }
-            else
-            {
-                negativo = negativo += 1;
-            }if(num5 > 0)
+            if (num3 > 0)
             {
                 positivo = positivo += 1;
             }
@@ -99,9 +86,25 @@ namespace uri1066
             {
                 negativo = negativo += 1;
             }
-            
+            if (num4 > 0)
+            {
+                positivo = positivo += 1;
+            }
+            else
+            {
+                negativo = negativo += 1;
+            }
+            if (num5 > 0)
+            {
+                positivo = positivo += 1;
+            }
+            else
+            {
+                negativo = negativo += 1;
+            }
+
             Console.WriteLine(par + " valor(es) par(es)");
-            Console.WriteLine(impar+ " valor(es) impar(es)");
+            Console.WriteLine(impar + " valor(es) impar(es)");
             Console.WriteLine(positivo + " valor(es) positivo(s)");
             Console.WriteLine(negativo + " valor(es) negativo(s)");
             Console.ReadKey();
