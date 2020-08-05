@@ -7,7 +7,7 @@ namespace Uri1158
     {
         static void Main(string[] args)
         {
-            int soma = 0, maior= 0, menor = 0;
+            int soma = 0;
             int n = int.Parse(Console.ReadLine()); 
             for (int i = 0; i < n; i++)
             {
