@@ -6,13 +6,18 @@ namespace Vetores
 {
     class Pessoa
     {
-        public string Name { get; set; }
+        public string Nome { get; set; }
         public string Email { get; set; }
-        public int Room { get; set; }
+
+        public Pessoa(string nome, string email)
+        {
+            Nome = nome;
+            Email = email;
+        }
 
         public override string ToString()
         {
-            return Room + ": " + Name + ", " + Email;
+            return Nome + ", " + Email;
         }
     }
 }

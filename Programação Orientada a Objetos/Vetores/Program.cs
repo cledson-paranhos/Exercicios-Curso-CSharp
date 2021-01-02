@@ -7,49 +7,38 @@ namespace Vetores
         static void Main(string[] args)
         {
             Pessoa[] vect = new Pessoa[10];
-            int cont = 1;
 
-            Console.Write("Quantos quartos irá ser alugado: ");
+            Console.Write("Quantos quartos serão alugados? ");
             int n = int.Parse(Console.ReadLine());
-     
-            for (int i = 0; i < n; i++)
+
+            for(int i = 1; i <= n; i++)
             {
-                
-                Console.WriteLine("Rent #" + cont);
-                cont++;
+                Console.WriteLine();
+                Console.Write("Aluguel #"+ i);
+                Console.WriteLine();
 
                 Console.Write("Nome: ");
-                string name = Console.ReadLine();
+                string nome = Console.ReadLine();
 
                 Console.Write("Email: ");
                 string email = Console.ReadLine();
 
-                Console.Write("Room: ");
-                int room = int.Parse(Console.ReadLine());
-                vect[i] = new Pessoa { Name = name, Email = email, Room = room };
+                Console.Write("Quarto: ");
+                int quarto = int.Parse(Console.ReadLine());
 
-            }
-
-            int aux;
-            for(int i = 0; i < n; i++)
-            {
-                for(int j = i + 1; j < n; j++)
-                {
-                    if(vect[i].Room > vect[j].Room)
-                    {
-                        aux = vect[j].Room;
-                        vect[j].Room = vect[i].Room;
-                        vect[i].Room = aux;
-                    }
-                }
-            }
-            
-            for (int i = 0; i < n; i++)
-            {
-                Console.Write("Dados " + vect[i]);
+                vect[quarto] = new Pessoa(nome, email);
                 Console.WriteLine();
             }
 
+            Console.WriteLine("Quartos ocupados:");
+            for (int i = 0; i < 10; i++)
+            {
+                if(vect[i] != null)
+                {
+                    Console.Write(i+": "+ vect[i]);
+                    Console.WriteLine();
+                }
+            }
         }
     }
 }
